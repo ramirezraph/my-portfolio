@@ -14,6 +14,5 @@
    color: whitesmoke;
    width: 100vw;
    height: 100vh;
-   @apply bg-primary;
 }
 </style>

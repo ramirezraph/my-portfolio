@@ -1,7 +1,5 @@
 <template>
-   <nav
-      class="absolute left-0 right-0 w-full p-6 px-32 space-x-6 text-right top-8"
-   >
+   <nav class="sticky left-0 right-0 w-full p-6 space-x-6 text-right top-8">
       <button class="px-3 text-white">
          my projects
       </button>

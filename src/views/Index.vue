@@ -1,5 +1,5 @@
 <template>
-   <div class="w-screen h-screen px-32">
+   <div class="w-screen h-auto px-32 bg-primary">
       <navbar />
       <hero />
       <projects />

@@ -1,6 +1,6 @@
 <template>
-   <section class="relative w-full min-h-full top-40">
-      <span class="absolute text-2xl left-6 -top-12">Hi, my name is</span>
+   <section class="relative w-full h-screen pt-40 text-left">
+      <span class="relative text-2xl -top-6 left-6">Hi, my name is</span>
       <div class="grid w-full grid-cols-2 select-none">
          <div class="relative w-full text-left">
             <div class="relative flex -top-14 text-primary">
@@ -27,7 +27,7 @@
          </div>
          <div>
             <div
-               class="relative bottom-0 ml-auto bg-white w-80 h-72 box opacity-5"
+               class="relative bottom-0 ml-auto bg-white top-4 h-60 w-80 box opacity-5"
             ></div>
          </div>
          <div class="flex flex-col text-right">
@@ -176,7 +176,7 @@
                   </svg>
                </button>
             </div>
-            <div class="relative w-full h-full top-12">
+            <div class="relative w-full h-full top-4">
                <hr class="relative ml-auto w-80 top-16" />
                <hr class="relative ml-auto w-52 top-24" />
                <hr class="relative w-32 ml-auto top-32" />

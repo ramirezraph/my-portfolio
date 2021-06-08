@@ -1,15 +1,19 @@
 <template>
-   <div class="w-screen h-auto px-32 bg-primary">
+   <div class="w-full h-full px-32 bg-primary">
       <navbar />
       <hero />
-      <projects />
+      <project-one />
+      <project-two />
+      <project-three />
    </div>
 </template>
 
 <script>
-import Hero from './Hero.vue';
 import Navbar from './Navbar.vue';
-import Projects from './Projects.vue';
+import Hero from './Hero.vue';
+import ProjectOne from './ProjectOne.vue';
+import ProjectTwo from './ProjectTwo.vue';
+import ProjectThree from './ProjectThree.vue';
 // @ is an alias to /src
 
 export default {
@@ -17,7 +21,11 @@ export default {
    components: {
       Navbar,
       Hero,
-      Projects,
+      ProjectOne,
+      ProjectTwo,
+      ProjectThree,
    },
 };
 </script>
+
+<style lang="scss"></style>

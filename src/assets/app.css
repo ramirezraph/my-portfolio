@@ -1,7 +1,6 @@
-body,
-html {
-   margin: 0px;
-   padding: 0px;
+body {
+   margin: 0;
+   padding: 0;
    @apply bg-primary;
 }
 
@@ -10,3 +9,7 @@ html {
 *::after {
    box-sizing: border-box;
 }
+
+/* * {
+   outline: 1px solid red;
+} */

@@ -1,5 +1,5 @@
 <template>
-   <section class="relative w-full h-screen pt-40 text-left">
+   <section class="relative w-full h-screen text-left pt-60">
       <span class="relative text-2xl -top-6 left-6">Hi, my name is</span>
       <div class="grid w-full grid-cols-2 select-none">
          <div class="relative w-full text-left">

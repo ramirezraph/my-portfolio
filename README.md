@@ -1,4 +1,4 @@
-# vue-landing-page
+# vue-my-portfolio
 
 ## Project setup
 ```

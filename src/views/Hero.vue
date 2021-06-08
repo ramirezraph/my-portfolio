@@ -176,7 +176,7 @@
                   </svg>
                </button>
             </div>
-            <div class="relative w-full h-full top-9">
+            <div class="relative w-full h-full top-12">
                <hr class="relative ml-auto w-80 top-16" />
                <hr class="relative ml-auto w-52 top-24" />
                <hr class="relative w-32 ml-auto top-32" />

@@ -1,5 +1,5 @@
 <template>
-   <section class="relative w-full h-screen top-40">
+   <section class="relative w-full min-h-full top-40">
       <span class="absolute text-2xl left-6 -top-12">Hi, my name is</span>
       <div class="grid w-full grid-cols-2 select-none">
          <div class="relative w-full text-left">
@@ -7,7 +7,7 @@
                <div>
                   <h1 class="font-semibold ra">RA</h1>
                </div>
-               <div class="relative space-y-6 ml-9 top-10 ex-col text-8xl">
+               <div class="relative space-y-7 ml-9 top-10 ex-col text-8xl">
                   <h1 class="phael">PHAEL</h1>
                   <h1 class="mirez">MIREZ</h1>
                </div>

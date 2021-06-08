@@ -25,8 +25,12 @@
                view projects
             </button>
          </div>
-         <div></div>
-         <div class="text-right">
+         <div>
+            <div
+               class="relative bottom-0 ml-auto bg-white w-80 h-72 box opacity-5"
+            ></div>
+         </div>
+         <div class="flex flex-col text-right">
             <div class="flex justify-end gap-x-8">
                <button>
                   <svg
@@ -171,6 +175,12 @@
                      </g>
                   </svg>
                </button>
+            </div>
+            <div class="relative w-full h-full top-9">
+               <hr class="relative ml-auto w-80 top-16" />
+               <hr class="relative ml-auto w-52 top-24" />
+               <hr class="relative w-32 ml-auto top-32" />
+               <hr class="relative w-10 ml-auto top-40" />
             </div>
          </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-   <section class="w-full h-screen">
+   <section>
       <h1>Project Two</h1>
    </section>
 </template>

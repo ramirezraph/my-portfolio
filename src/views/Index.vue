@@ -1,10 +1,12 @@
 <template>
-   <div class="w-full h-full px-32 bg-primary">
-      <navbar />
-      <hero />
-      <project-one />
-      <project-two />
-      <project-three />
+   <div>
+      <navbar class="z-50" />
+      <full-page :options="options" id="fullpage" class="px-32">
+         <hero class="section active" />
+         <project-one class="section" />
+         <project-two class="section" />
+         <project-three class="section" />
+      </full-page>
    </div>
 </template>
 
@@ -24,6 +26,23 @@ export default {
       ProjectOne,
       ProjectTwo,
       ProjectThree,
+   },
+   data() {
+      return {
+         options: {
+            licenseKey: 'AsdasSDasd',
+            autoScrolling: true,
+         },
+      };
+   },
+   methods: {
+      toggleNavigation() {
+         this.options.navigation = !this.options.navigation;
+      },
+      toggleScrollbar() {
+         console.log('Changing scrollbar...');
+         this.options.scrollBar = !this.options.scrollBar;
+      },
    },
 };
 </script>

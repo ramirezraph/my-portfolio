@@ -32,6 +32,7 @@ export default {
          options: {
             licenseKey: 'AsdasSDasd',
             autoScrolling: true,
+            verticalCentered: true,
          },
       };
    },

@@ -1,7 +1,132 @@
 <template>
-   <section>
-      <h1>
-         Project One
+   <section class="text-left">
+      <h1 class="text-8xl">
+         <span class="text-primary">$ cd</span> my project
       </h1>
+      <div class="flex mt-20">
+         <div class="w-full ">
+            <div>
+               <h2 class="text-4xl font-semibold">eCommerce Website</h2>
+               <p class="mt-6 leading-loose opacity-80">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  laboriosam odio harum accusamus asperiores cumque.
+               </p>
+
+               <div class="flex flex-wrap mt-24 gap-y-5 chips gap-x-3">
+                  <chips-technology>
+                     HTML/CSS
+                  </chips-technology>
+                  <chips-technology>
+                     JS
+                  </chips-technology>
+                  <chips-technology>
+                     Vue
+                  </chips-technology>
+                  <chips-technology>
+                     TailwindCSS
+                  </chips-technology>
+                  <chips-technology>
+                     PHP
+                  </chips-technology>
+                  <chips-technology>
+                     Laravel
+                  </chips-technology>
+               </div>
+            </div>
+            <div class="flex flex-wrap mt-12 gap-y-6 gap-x-5">
+               <button-icon tailwindColor="bg-green-700">
+                  <svg
+                     id="MDI_monitor-screenshot"
+                     data-name="MDI / monitor-screenshot"
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     viewBox="0 0 16.359 16.359"
+                  >
+                     <g
+                        id="Boundary"
+                        fill="#fff"
+                        stroke="rgba(0,0,0,0)"
+                        stroke-width="1"
+                        opacity="0"
+                     >
+                        <rect width="16.359" height="16.359" stroke="none" />
+                        <rect
+                           x="0.5"
+                           y="0.5"
+                           width="15.359"
+                           height="15.359"
+                           fill="none"
+                        />
+                     </g>
+                     <path
+                        id="Path_monitor-screenshot"
+                        data-name="Path / monitor-screenshot"
+                        d="M6.453,4.726H3.726V7.453H5.09V6.09H6.453m6.816,1.363H11.906V8.816H10.543v1.363h2.726m1.363,1.363H2.363V3.363H14.632m0-1.363H2.363A1.359,1.359,0,0,0,1,3.363v8.179a1.363,1.363,0,0,0,1.363,1.363H7.135v1.363H5.771v1.363h5.453V14.269H9.861V12.906h4.771A1.363,1.363,0,0,0,16,11.543V3.363A1.363,1.363,0,0,0,14.632,2"
+                        transform="translate(-0.318 -0.637)"
+                        fill="#fff"
+                     />
+                  </svg>
+                  Live Demo
+               </button-icon>
+               <button-icon tailwindColor="bg-gray-800">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     viewBox="0 0 21 21"
+                  >
+                     <g
+                        id="MDI_github"
+                        data-name="MDI / github"
+                        transform="translate(-0.009 0.339)"
+                     >
+                        <g
+                           id="Boundary"
+                           transform="translate(0.009 -0.339)"
+                           fill="#fff"
+                           stroke="rgba(0,0,0,0)"
+                           stroke-width="1"
+                           opacity="0"
+                        >
+                           <rect width="21" height="21" stroke="none" />
+                           <rect
+                              x="0.5"
+                              y="0.5"
+                              width="20"
+                              height="20"
+                              fill="none"
+                           />
+                        </g>
+                        <path
+                           id="Path_github"
+                           data-name="Path / github"
+                           d="M9.933,2A7.873,7.873,0,0,0,2,9.811a7.844,7.844,0,0,0,5.426,7.42c.4.062.524-.18.524-.391v-1.32c-2.2.469-2.665-1.047-2.665-1.047A2.11,2.11,0,0,0,4.4,13.326c-.722-.484.056-.469.056-.469a1.665,1.665,0,0,1,1.214.8,1.719,1.719,0,0,0,2.308.648,1.677,1.677,0,0,1,.5-1.047c-1.761-.2-3.609-.867-3.609-3.843A3,3,0,0,1,5.689,7.3a2.754,2.754,0,0,1,.079-2.062s.666-.211,2.182.8a7.758,7.758,0,0,1,3.966,0c1.515-1.008,2.182-.8,2.182-.8A2.754,2.754,0,0,1,14.177,7.3a3,3,0,0,1,.817,2.117c0,2.984-1.856,3.64-3.625,3.835a1.849,1.849,0,0,1,.547,1.445v2.14c0,.211.127.461.531.391a7.845,7.845,0,0,0,5.418-7.42A7.873,7.873,0,0,0,9.933,2Z"
+                           transform="translate(0.567 0.567)"
+                           fill="#fff"
+                        />
+                     </g>
+                  </svg>
+
+                  Github Repository
+               </button-icon>
+            </div>
+         </div>
+         <div class="w-full px-14">
+            <img src="../assets/images/login.png" alt="" />
+         </div>
+      </div>
    </section>
 </template>
+
+<script>
+import ChipsTechnology from '@/components/ChipsTechnology.vue';
+import ButtonIcon from '../components/ButtonIcon.vue';
+
+export default {
+   components: {
+      ChipsTechnology,
+      ButtonIcon,
+   },
+};
+</script>

@@ -8,7 +8,7 @@
                   <div>
                      <h1 class="font-semibold ra">RA</h1>
                   </div>
-                  <div class="relative space-y-8 ml-9 top-12 ex-col text-8xl">
+                  <div class="relative space-y-9 ml-9 top-11 ex-col text-8xl">
                      <h1 class="phael">PHAEL</h1>
                      <h1 class="mirez">MIREZ</h1>
                   </div>
@@ -28,11 +28,11 @@
             </div>
             <div class="relative">
                <div
-                  class="absolute h-64 bg-white -right-7 top-7 w-96 box opacity-5"
+                  class="absolute top-0 w-7/12 h-64 bg-white -right-10 box opacity-5"
                ></div>
             </div>
             <div class="flex flex-col text-right">
-               <div class="relative flex justify-end gap-x-8 top-7">
+               <div class="relative flex justify-end gap-x-8">
                   <button>
                      <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +197,7 @@
                      </svg>
                   </button>
                </div>
-               <div class="relative w-full h-full top-16">
+               <div class="relative w-full h-full top-10">
                   <hr class="relative ml-auto w-80 top-16" />
                   <hr class="relative ml-auto w-52 top-24" />
                   <hr class="relative w-32 ml-auto top-32" />
@@ -215,14 +215,14 @@ export default {};
 
 <style lang="scss" scoped>
 .ra {
-   font-size: 20rem;
+   font-size: 18rem;
    line-height: 1em;
    letter-spacing: -0.1em;
 }
 
 .phael,
 .mirez {
-   font-size: 7rem;
+   font-size: 6rem;
 }
 
 .ra::before {

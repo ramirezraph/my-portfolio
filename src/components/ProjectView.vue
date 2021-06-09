@@ -1,12 +1,18 @@
 <template>
-   <div class="flex">
+   <div class="flex" :class="reverse ? 'flex-row-reverse' : ''">
       <div class="w-full">
          <div>
-            <h2 class="text-4xl font-semibold">{{ project.title }}</h2>
+            <h2
+               class="text-4xl font-semibold"
+               :class="reverse ? 'text-left' : 'text-left'"
+            >
+               {{ project.title }}
+            </h2>
             <p
                v-for="(p, index) in project.description"
                :key="index"
                class="mt-6 leading-loose opacity-80"
+               :class="reverse ? 'text-left' : 'text-left'"
             >
                {{ p }}
             </p>
@@ -99,7 +105,7 @@
             </button-icon>
          </div>
       </div>
-      <div class="w-full pl-14">
+      <div class="w-full" :class="reverse ? 'pr-14' : 'pl-14'">
          <carousel
             :per-page="1"
             :autoplay="true"
@@ -134,6 +140,10 @@ export default {
       project: {
          type: Object,
          required: true,
+      },
+      reverse: {
+         type: Boolean,
+         default: false,
       },
    },
    data() {

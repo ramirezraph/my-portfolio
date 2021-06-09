@@ -6,30 +6,21 @@
       <div class="flex mt-20">
          <div class="w-full ">
             <div>
-               <h2 class="text-4xl font-semibold">eCommerce Website</h2>
-               <p class="mt-6 leading-loose opacity-80">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  laboriosam odio harum accusamus asperiores cumque.
+               <h2 class="text-4xl font-semibold">{{ projectOne.title }}</h2>
+               <p
+                  v-for="(p, index) in projectOne.description"
+                  :key="index"
+                  class="mt-6 leading-loose opacity-80"
+               >
+                  {{ p }}
                </p>
 
                <div class="flex flex-wrap mt-24 gap-y-5 chips gap-x-3">
-                  <chips-technology>
-                     HTML/CSS
-                  </chips-technology>
-                  <chips-technology>
-                     JS
-                  </chips-technology>
-                  <chips-technology>
-                     Vue
-                  </chips-technology>
-                  <chips-technology>
-                     TailwindCSS
-                  </chips-technology>
-                  <chips-technology>
-                     PHP
-                  </chips-technology>
-                  <chips-technology>
-                     Laravel
+                  <chips-technology
+                     v-for="(technology, index) in projectOne.technologies"
+                     :key="index"
+                  >
+                     {{ technology }}
                   </chips-technology>
                </div>
             </div>
@@ -112,8 +103,12 @@
                </button-icon>
             </div>
          </div>
-         <div class="w-full px-14">
-            <img src="../assets/images/login.png" alt="" />
+         <div class="w-full pl-14">
+            <img
+               :src="getImgUrl(projectOne.imageLinks[0])"
+               alt=""
+               class="object-cover object-top ml-auto transition-all ease-in-out"
+            />
          </div>
       </div>
    </section>
@@ -127,6 +122,24 @@ export default {
    components: {
       ChipsTechnology,
       ButtonIcon,
+   },
+   computed: {
+      projects() {
+         return this.$store.getters['projects'];
+      },
+      projectOne() {
+         return this.projects[0];
+      },
+   },
+   data() {
+      return {
+         activeImageIndex: 0,
+      };
+   },
+   methods: {
+      getImgUrl(img) {
+         return require('../assets/images/' + img);
+      },
    },
 };
 </script>

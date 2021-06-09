@@ -27,7 +27,10 @@
             </div>
          </div>
          <div class="flex flex-wrap mt-12 gap-y-6 gap-x-5">
-            <button-icon tailwindColor="bg-green-700">
+            <button-icon
+               tailwindColor="bg-green-700"
+               @button-icon-clicked="goToLink(project.demoLink)"
+            >
                <svg
                   id="MDI_monitor-screenshot"
                   data-name="MDI / monitor-screenshot"
@@ -62,7 +65,10 @@
                </svg>
                Live Demo
             </button-icon>
-            <button-icon tailwindColor="bg-gray-800">
+            <button-icon
+               tailwindColor="bg-gray-800"
+               @button-icon-clicked="goToLink(project.githubLink)"
+            >
                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -152,6 +158,9 @@ export default {
    methods: {
       getImgUrl(img) {
          return require('../assets/images/' + img);
+      },
+      goToLink(link) {
+         window.open(link, '_blank');
       },
    },
 };

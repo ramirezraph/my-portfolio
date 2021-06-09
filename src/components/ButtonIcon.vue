@@ -2,6 +2,7 @@
    <button
       class="flex content-center px-12 py-3 justify-items-center rounded-xl gap-x-3"
       :class="tailwindColor"
+      @click="$emit('button-icon-clicked')"
    >
       <slot />
    </button>
@@ -17,6 +18,3 @@ export default {
    },
 };
 </script>
-
-<style lang="scss" scoped></style>
-``

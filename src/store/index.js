@@ -23,7 +23,11 @@ export default new Vuex.Store({
             ],
             demoLink: 'https://www.google.com',
             githubLink: 'https://github.com/ramirezraph',
-            imageLinks: ['classroom/login.png', 'classroom/classes.png'],
+            imageLinks: [
+               'classroom/login.png',
+               'classroom/classes.png',
+               'classroom/class.png',
+            ],
          },
          {
             id: 2,

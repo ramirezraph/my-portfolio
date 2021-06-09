@@ -119,7 +119,7 @@
             :loop="true"
             :autoplay-timeout="5000"
             class="w-full"
-            pagination-color="#000"
+            pagination-color="#9a9a9a"
             pagination-active-color="#fff"
          >
             <slide v-for="(image, index) in project.imageLinks" :key="index">

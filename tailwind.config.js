@@ -8,6 +8,9 @@ module.exports = {
          secondary: '#707070',
       }),
       extend: {
+         screens: {
+            '3xl': '1920px',
+         },
          textColor: {
             primary: '#18F890',
             secondary: '#5D19C2',

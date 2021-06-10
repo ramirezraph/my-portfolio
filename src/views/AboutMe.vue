@@ -281,9 +281,7 @@ h1 {
       height: 4px;
       position: absolute;
       bottom: -0.2em;
-      left: -0.5em;
       background-color: #18f890;
-      border-radius: 50%;
    }
 }
 </style>

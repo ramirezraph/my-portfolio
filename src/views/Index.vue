@@ -6,7 +6,11 @@
          <project-one v-if="true" class="section" />
          <project-two v-if="true" class="section" />
          <project-three v-if="true" class="section" />
-         <about-me class="section" />
+         <about-me v-if="true" class="section" />
+         <contact class="section" />
+         <footer class="section fp-auto-height">
+            <h1>My Footer</h1>
+         </footer>
       </full-page>
    </div>
 </template>
@@ -18,6 +22,7 @@ import ProjectOne from './ProjectOne.vue';
 import ProjectTwo from './ProjectTwo.vue';
 import ProjectThree from './ProjectThree.vue';
 import AboutMe from './AboutMe.vue';
+import Contact from './Contact.vue';
 
 export default {
    name: 'Index',
@@ -28,6 +33,7 @@ export default {
       ProjectTwo,
       ProjectThree,
       AboutMe,
+      Contact,
    },
    data() {
       return {

@@ -23,7 +23,7 @@
                   >
                </h2>
                <a
-                  href="#project-1"
+                  href="#project"
                   class="relative px-12 py-4 text-xl bg-purple-700 rounded-full top-24"
                >
                   view projects

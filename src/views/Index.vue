@@ -1,25 +1,33 @@
 <template>
    <div>
       <nav
-         class="absolute left-0 right-0 z-50 w-full p-6 px-32 space-x-6 text-right top-8"
+         class="absolute left-0 right-0 z-50 w-full p-6 px-32 space-x-6 top-8"
       >
-         <a href="#project-1" class="px-3 text-white">
-            my projects
-         </a>
-         <a href="#about" class="px-3 text-white">
-            about me
-         </a>
-         <a href="#contact" class="px-3 text-white">
-            get in touch
-         </a>
+         <ul class="flex justify-end" id="nav">
+            <li data-menuanchor="project">
+               <a href="#project" class="px-3 text-white active:text-primary">
+                  my projects
+               </a>
+            </li>
+            <li data-menuanchor="about">
+               <a href="#about" class="px-3 text-white active:text-primary">
+                  about me
+               </a>
+            </li>
+            <li data-menuanchor="contact">
+               <a href="#contact" class="px-3 text-white active:text-primary">
+                  get in touch
+               </a>
+            </li>
+         </ul>
       </nav>
       <full-page :options="options" id="fullpage" class="px-32">
-         <hero data-anchor="hero" v-if="true" class="section active" />
-         <project-one data-anchor="project-1" v-if="true" class="section" />
-         <project-two data-anchor="project-2" v-if="true" class="section" />
-         <project-three data-anchor="project-3" v-if="true" class="section" />
-         <about-me data-anchor="about" v-if="true" class="section" />
-         <contact data-anchor="contact" class="section" />
+         <hero data-menuanchor="hero" v-if="true" class="section active" />
+         <project-one data-menuanchor="project" v-if="true" class="section" />
+         <project-two data-menuanchor="project" v-if="true" class="section" />
+         <project-three data-menuanchor="project" v-if="true" class="section" />
+         <about-me data-menuanchor="about" v-if="true" class="section" />
+         <contact data-menuanchor="contact" class="section" />
          <footer
             data-anchor="footer"
             class="pt-6 pb-16 text-left section fp-auto-height"
@@ -69,17 +77,18 @@ export default {
             licenseKey: 'AsdasSDasd',
             autoScrolling: true,
             verticalCentered: true,
+            anchors: [
+               'hero',
+               'project',
+               'project',
+               'project',
+               'about',
+               'contact',
+               'footer',
+            ],
+            menu: '#nav',
          },
       };
-   },
-   methods: {
-      toggleNavigation() {
-         this.options.navigation = !this.options.navigation;
-      },
-      toggleScrollbar() {
-         console.log('Changing scrollbar...');
-         this.options.scrollBar = !this.options.scrollBar;
-      },
    },
 };
 </script>
@@ -98,4 +107,34 @@ export default {
 //       bottom: -0.5em;
 //    }
 // }
+
+li a {
+   transition: all 500ms ease-in-out;
+
+   &:before {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      bottom: -0.2em;
+      background-color: #18f890;
+      opacity: 0;
+
+      transition: width 500ms ease-out;
+   }
+}
+
+li.active a {
+   @apply text-primary relative;
+
+   &:before {
+      content: '';
+      position: absolute;
+      width: 82%;
+      height: 1px;
+      bottom: -0.2em;
+      background-color: #18f890;
+      opacity: 1;
+   }
+}
 </style>

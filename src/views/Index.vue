@@ -2,10 +2,11 @@
    <div>
       <navbar class="z-50" />
       <full-page :options="options" id="fullpage" class="px-32">
-         <hero class="section active" />
-         <project-one class="section" />
-         <project-two class="section" />
-         <project-three class="section" />
+         <hero v-if="true" class="section active" />
+         <project-one v-if="true" class="section" />
+         <project-two v-if="true" class="section" />
+         <project-three v-if="true" class="section" />
+         <about-me class="section" />
       </full-page>
    </div>
 </template>
@@ -16,7 +17,7 @@ import Hero from './Hero.vue';
 import ProjectOne from './ProjectOne.vue';
 import ProjectTwo from './ProjectTwo.vue';
 import ProjectThree from './ProjectThree.vue';
-// @ is an alias to /src
+import AboutMe from './AboutMe.vue';
 
 export default {
    name: 'Index',
@@ -26,6 +27,7 @@ export default {
       ProjectOne,
       ProjectTwo,
       ProjectThree,
+      AboutMe,
    },
    data() {
       return {

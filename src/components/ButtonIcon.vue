@@ -1,6 +1,6 @@
 <template>
    <button
-      class="flex content-center px-12 py-3 justify-items-center rounded-xl gap-x-3"
+      class="flex items-center px-8 py-3 space-x-3 text-xs rounded-xl"
       :class="tailwindColor"
       @click="$emit('button-icon-clicked')"
    >

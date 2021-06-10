@@ -1,11 +1,13 @@
 <template>
    <section>
-      <project-view class="mt-24" :project="projects[2]" />
-      <div class="block w-full mt-12">
-         <div class="flex items-center justify-end gap-x-6">
-            <h2 class="opacity-80">Still interested to see more?</h2>
+      <project-view class="mt-12 lg:mt-24" :project="projects[2]" />
+      <div class="w-full mt-6 visit lg:block">
+         <div
+            class="flex items-center justify-center lg:justify-end gap-x-3 lg:gap-x-6"
+         >
+            <h2 class="text-xs opacity-80">Still interested to see more?</h2>
             <button
-               class="flex px-10 py-4 bg-purple-700 rounded-full gap-x-2"
+               class="flex items-center px-5 py-2 text-sm bg-purple-700 rounded-full lg:text-base lg:px-10 lg:py-4 gap-x-2"
                @click="goToLink('https://github.com/ramirezraph')"
             >
                <svg
@@ -73,4 +75,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media (min-height: 700px) {
+   .visit {
+      @apply mt-12;
+   }
+}
+</style>

@@ -8,8 +8,18 @@
          <project-three v-if="true" class="section" />
          <about-me v-if="true" class="section" />
          <contact class="section" />
-         <footer class="section fp-auto-height">
-            <h1>My Footer</h1>
+         <footer class="pt-6 pb-16 text-left section fp-auto-height">
+            <div class="flex items-end">
+               <div>
+                  <span class="text-sm opacity-40">portfolio</span>
+                  <h5 class="text-xl name">
+                     Ra<span class="text-primary">phael Ra</span>mirez
+                  </h5>
+               </div>
+               <div class="ml-auto text-sm opacity-50">
+                  &copy; All rights reserved. 2021.
+               </div>
+            </div>
          </footer>
       </full-page>
    </div>
@@ -56,4 +66,18 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+// .name {
+//    position: relative;
+
+//    &:before {
+//       content: '';
+//       width: 20ch;
+//       height: 3px;
+//       background: #18f890;
+//       position: absolute;
+//       left: 0;
+//       bottom: -0.5em;
+//    }
+// }
+</style>

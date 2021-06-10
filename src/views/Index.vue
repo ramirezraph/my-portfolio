@@ -133,9 +133,10 @@
          <project-one data-menuanchor="project" v-if="true" class="section" />
          <project-two data-menuanchor="project" v-if="true" class="section" />
          <project-three data-menuanchor="project" v-if="true" class="section" />
-         <about-me data-menuanchor="about" v-if="false" class="section" />
+         <about-me data-menuanchor="about" v-if="true" class="section" />
          <contact v-if="false" data-menuanchor="contact" class="section" />
          <footer
+            v-if="false"
             data-anchor="footer"
             class="pt-6 pb-16 text-left section fp-auto-height"
          >

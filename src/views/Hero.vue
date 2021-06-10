@@ -14,7 +14,7 @@
                   </div>
                </div>
             </div>
-            <div class="w-full space-y-16 text-right">
+            <div class="w-full text-right">
                <h2 class="text-4xl">
                   A front-end web developer <br />
                   based in <span class="text-red-400">Phil</span>ipp<span
@@ -22,9 +22,12 @@
                      >ines</span
                   >
                </h2>
-               <button class="px-12 py-4 text-xl bg-purple-700 rounded-full">
+               <a
+                  href="#project-1"
+                  class="relative px-12 py-4 text-xl bg-purple-700 rounded-full top-24"
+               >
                   view projects
-               </button>
+               </a>
             </div>
             <div class="relative">
                <div

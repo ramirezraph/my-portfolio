@@ -2,7 +2,7 @@
    <nav
       class="absolute left-0 right-0 w-full p-6 px-32 space-x-6 text-right top-8"
    >
-      <button class="px-3 text-white">
+      <button to="#test" class="px-3 text-white">
          my projects
       </button>
       <button class="px-3 text-white">
@@ -15,5 +15,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+   data() {
+      return {};
+   },
+};
 </script>

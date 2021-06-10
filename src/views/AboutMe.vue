@@ -259,9 +259,12 @@
                </g>
             </svg>
 
-            <button class="px-12 py-4 ml-auto bg-purple-700 rounded-full">
+            <a
+               href="#contact"
+               class="px-12 py-4 ml-auto bg-purple-700 rounded-full"
+            >
                contact me
-            </button>
+            </a>
          </div>
       </div>
    </section>

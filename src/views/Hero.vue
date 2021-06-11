@@ -2,12 +2,12 @@
    <section class="pt-3">
       <div class="flex flex-col">
          <div class="relative flex justify-center">
-            <p class="absolute text-sm -top-4">Hi, my name is</p>
+            <p class="absolute text-sm md:text-2xl -top-4">Hi, my name is</p>
             <div>
                <h1 class="font-semibold ra text-primary">RA</h1>
             </div>
             <div
-               class="relative ml-4 space-y-4 lg:space-y-9 top-6 lg:ml-9 lg:top-11 ex-col text-8xl"
+               class="relative ml-4 space-y-4 md:ml-8 md:space-y-5 lg:space-y-9 top-6 md:top-8 lg:ml-9 lg:top-11 ex-col text-8xl"
             >
                <h1 class="phael text-primary">PHAEL</h1>
                <h1 class="mirez text-primary">MIREZ</h1>
@@ -15,7 +15,7 @@
          </div>
          <div class="flex flex-col justify-center mt-10">
             <div>
-               <h2 class="text-xl lg:text-4xl">
+               <h2 class="text-xl md:text-3xl lg:text-4xl">
                   A front-end web developer <br />
                   based in <span class="text-red-400">Phil</span>ipp<span
                      class="text-blue-400"
@@ -24,7 +24,7 @@
                </h2>
                <a href="#project">
                   <button
-                     class="px-10 py-3 mt-10 text-base bg-purple-700 rounded-full lg:text-xl lg:px-12 lg:py-4"
+                     class="px-10 py-3 mt-10 text-base bg-purple-700 rounded-full md:mt-16 md:text-xl md:px-12 md:py-4"
                   >
                      view projects
                   </button>
@@ -223,9 +223,25 @@ export default {};
    transform: rotate(90deg);
 }
 
-.socials button svg {
+.socials svg {
    width: 32px;
    height: 32px;
+}
+
+@media (min-width: 768px) {
+   .ra {
+      font-size: 16rem;
+   }
+
+   .phael,
+   .mirez {
+      font-size: 6rem;
+   }
+
+   .socials svg {
+      width: 36px;
+      height: 36px;
+   }
 }
 
 @media (min-width: 1024px) {

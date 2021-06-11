@@ -1,7 +1,7 @@
 <template>
    <div>
       <nav
-         class="absolute z-10 w-full px-6 left-3 lg:p-6 md:px-16 lg:px-32 top-8 md:top-12 xl:px-16 2xl:px-40"
+         class="absolute z-10 w-full px-6 left-3 lg:p-6 md:px-16 lg:px-32 top-8 md:top-12 xl:px-32 2xl:px-40"
       >
          <ul class="justify-end hidden lg:flex" id="nav">
             <li data-menuanchor="project">
@@ -132,7 +132,7 @@
       <full-page
          :options="options"
          id="fullpage"
-         class="px-6 md:px-16 lg:px-32 xl:px-16 2xl:px-40"
+         class="px-6 md:px-16 lg:px-32 xl:px-32 2xl:px-40"
       >
          <hero data-menuanchor="hero" v-if="true" class="section active" />
          <project-one data-menuanchor="project" v-if="true" class="section" />

@@ -264,20 +264,20 @@ export default {};
 @media (min-width: 1280px) {
    .box {
       top: 0;
-      left: 26.5%;
+      left: 29.75%;
       height: 14rem;
    }
 }
 
 @media (min-width: 1366px) {
    .box {
-      left: 24.5%;
+      left: 27.5%;
    }
 }
 
 @media (min-width: 1440px) {
    .box {
-      left: 23.25%;
+      left: 25.7%;
    }
 }
 </style>

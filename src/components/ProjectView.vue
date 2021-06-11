@@ -1,9 +1,12 @@
 <template>
-   <div class="flex" :class="reverse ? 'flex-row-reverse' : ''">
+   <div
+      class="flex flex-col-reverse"
+      :class="reverse ? 'flex-row-reverse' : ''"
+   >
       <div class="w-full">
          <div>
             <h2
-               class="text-4xl font-semibold"
+               class="text-2xl font-semibold lg:text-4xl"
                :class="reverse ? 'text-left' : 'text-left'"
             >
                {{ project.title }}
@@ -11,13 +14,15 @@
             <p
                v-for="(p, index) in project.description"
                :key="index"
-               class="mt-6 leading-loose opacity-80"
+               class="mt-3 text-sm leading-normal lg:text-base opacity-80"
                :class="reverse ? 'text-left' : 'text-left'"
             >
                {{ p }}
             </p>
 
-            <div class="flex flex-wrap mt-24 gap-y-5 chips gap-x-3">
+            <div
+               class="flex flex-wrap mt-6 gap-y-3 lg:mt-24 lg:gap-y-5 chips lg:gap-x-3 gap-x-1.5"
+            >
                <chips-technology
                   v-for="(technology, index) in project.technologies"
                   :key="index"
@@ -26,7 +31,7 @@
                </chips-technology>
             </div>
          </div>
-         <div class="flex flex-wrap mt-12 gap-y-6 gap-x-5">
+         <div class="flex mt-6 space-x-3">
             <button-icon
                tailwindColor="bg-green-700"
                @button-icon-clicked="goToLink(project.demoLink)"
@@ -63,7 +68,7 @@
                      fill="#fff"
                   />
                </svg>
-               Live Demo
+               <span class="hidden md:inline">Live Demo</span>
             </button-icon>
             <button-icon
                tailwindColor="bg-gray-800"
@@ -106,12 +111,11 @@
                      />
                   </g>
                </svg>
-
-               Github Repository
+               <span class="hidden md:inline">Github Repository</span>
             </button-icon>
          </div>
       </div>
-      <div class="w-full" :class="reverse ? 'pr-14' : 'pl-14'">
+      <div class="w-full mb-6" :class="reverse ? 'lg:pr-14' : 'lg:pl-14'">
          <carousel
             :per-page="1"
             :autoplay="true"
@@ -119,8 +123,10 @@
             :loop="true"
             :autoplay-timeout="5000"
             class="w-full"
+            :paginationEnabled="false"
             pagination-color="#9a9a9a"
             pagination-active-color="#fff"
+            :paginationSize="5"
          >
             <slide v-for="(image, index) in project.imageLinks" :key="index">
                <img :src="getImgUrl(image)" alt="" class="bg-cover" />

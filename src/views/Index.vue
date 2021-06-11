@@ -134,20 +134,20 @@
          <project-two data-menuanchor="project" v-if="true" class="section" />
          <project-three data-menuanchor="project" v-if="true" class="section" />
          <about-me data-menuanchor="about" v-if="true" class="section" />
-         <contact v-if="false" data-menuanchor="contact" class="section" />
+         <contact v-if="true" data-menuanchor="contact" class="section" />
          <footer
-            v-if="false"
+            v-if="true"
             data-anchor="footer"
             class="pt-6 pb-16 text-left section fp-auto-height"
          >
-            <div class="flex items-end">
+            <div class="flex flex-col">
                <div>
                   <span class="text-sm opacity-40">portfolio</span>
                   <a href="#hero" class="block text-xl name">
                      Ra<span class="text-primary">phael Ra</span>mirez
                   </a>
                </div>
-               <div class="pr-3 ml-auto text-right">
+               <div class="pr-3 mt-10 lg:text-right lg:ml-auto">
                   <a href="#hero" class="ml-auto">
                      back to top
                   </a>

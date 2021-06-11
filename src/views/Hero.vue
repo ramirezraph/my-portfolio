@@ -280,4 +280,10 @@ export default {};
       left: 25.7%;
    }
 }
+
+@media (min-width: 1920px) {
+   .box {
+      left: 26.6%;
+   }
+}
 </style>

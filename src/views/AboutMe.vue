@@ -25,7 +25,9 @@
             >
          </p>
          <div class="items-center w-full lg:flex lg:flex-row xl:mt-8">
-            <div class="flex items-center my-6 mb-12 space-x-2 md:space-x-4">
+            <div
+               class="flex items-center my-6 mb-12 space-x-2 2xl:space-x-6 md:space-x-4"
+            >
                <!-- HTML -->
                <svg
                   xmlns="http://www.w3.org/2000/svg"

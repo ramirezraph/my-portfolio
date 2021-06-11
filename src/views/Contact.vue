@@ -1,7 +1,7 @@
 <template>
    <section>
       <h1 class="text-4xl lg:text-8xl text-primary">get in touch</h1>
-      <p class="mt-3 text-xl lg:mt-10 lg:mb-24 lg:text-2xl opacity-80">
+      <p class="mt-3 text-base lg:mt-10 lg:mb-24 lg:text-2xl opacity-80">
          I'll be happy to connect with you.
       </p>
 

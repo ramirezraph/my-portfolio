@@ -1,10 +1,10 @@
 <template>
    <div
-      class="flex flex-col-reverse"
-      :class="reverse ? 'flex-row-reverse' : ''"
+      class="flex flex-col-reverse xl:flex-row xl:gap-x-8"
+      :class="reverse ? 'xl:flex-row-reverse' : ''"
    >
       <div class="w-full">
-         <div class="mt-6">
+         <div class="mt-6 xl:mt-0">
             <h2
                class="text-2xl font-semibold md:text-3xl lg:text-4xl"
                :class="reverse ? 'text-left' : 'text-left'"
@@ -14,7 +14,7 @@
             <p
                v-for="(p, index) in project.description"
                :key="index"
-               class="mt-3 text-sm leading-normal md:leading-relaxed md:text-base lg:text-base opacity-80"
+               class="mt-3 text-sm leading-normal md:leading-relaxed md:text-base lg:text-base opacity-80 xl:leading-loose"
                :class="reverse ? 'text-left' : 'text-left'"
             >
                {{ p }}
@@ -115,7 +115,7 @@
             </button-icon>
          </div>
       </div>
-      <div class="w-full" :class="reverse ? 'lg:pr-14' : 'lg:pl-14'">
+      <div class="w-full">
          <carousel
             :per-page="1"
             :autoplay="true"

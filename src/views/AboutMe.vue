@@ -276,7 +276,7 @@
             <div class="xl:ml-auto">
                <a
                   href="#contact"
-                  class="px-6 py-4 ml-auto text-base bg-purple-700 rounded-full md:px-12 md:py-4"
+                  class="px-6 py-3 ml-auto text-base bg-purple-700 rounded-full md:px-12 md:py-4"
                >
                   contact me
                </a>

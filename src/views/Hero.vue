@@ -2,17 +2,19 @@
    <section>
       <div class="flex flex-col xl:flex-row xl:pt-20">
          <div class="relative flex justify-center xl:justify-start">
-            <p class="absolute text-sm md:text-2xl -top-4 xl:left-6 xl:top-3">
+            <p
+               class="absolute text-sm select-none md:text-2xl -top-4 xl:left-6 xl:top-3"
+            >
                Hi, my name is
             </p>
             <div>
-               <h1 class="font-semibold ra text-primary">RA</h1>
+               <h1 class="font-semibold select-none ra text-primary">RA</h1>
             </div>
             <div
                class="relative flex-col ml-4 space-y-4 md:ml-8 md:space-y-5 lg:space-y-9 top-6 md:top-8 lg:ml-9 lg:top-11 text-8xl"
             >
-               <h1 class="phael text-primary">PHAEL</h1>
-               <h1 class="mirez text-primary">MIREZ</h1>
+               <h1 class="select-none phael text-primary">PHAEL</h1>
+               <h1 class="select-none mirez text-primary">MIREZ</h1>
             </div>
          </div>
          <div
@@ -264,6 +266,12 @@ export default {};
       top: 0;
       left: 26.5%;
       height: 14rem;
+   }
+}
+
+@media (min-width: 1366px) {
+   .box {
+      left: 24.5%;
    }
 }
 </style>

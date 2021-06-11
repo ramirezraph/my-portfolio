@@ -4,7 +4,7 @@
       :class="reverse ? 'flex-row-reverse' : ''"
    >
       <div class="w-full">
-         <div class="md:mt-6">
+         <div class="mt-6">
             <h2
                class="text-2xl font-semibold md:text-3xl lg:text-4xl"
                :class="reverse ? 'text-left' : 'text-left'"

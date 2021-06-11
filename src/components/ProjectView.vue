@@ -115,7 +115,7 @@
             </button-icon>
          </div>
       </div>
-      <div class="w-full mb-6" :class="reverse ? 'lg:pr-14' : 'lg:pl-14'">
+      <div class="w-full" :class="reverse ? 'lg:pr-14' : 'lg:pl-14'">
          <carousel
             :per-page="1"
             :autoplay="true"
@@ -123,10 +123,10 @@
             :loop="true"
             :autoplay-timeout="5000"
             class="w-full"
-            :paginationEnabled="false"
+            :paginationEnabled="carouselPagination"
             pagination-color="#9a9a9a"
             pagination-active-color="#fff"
-            :paginationSize="5"
+            :paginationSize="8"
          >
             <slide v-for="(image, index) in project.imageLinks" :key="index">
                <img :src="getImgUrl(image)" alt="" class="bg-cover" />
@@ -159,7 +159,9 @@ export default {
       },
    },
    data() {
-      return {};
+      return {
+         carouselPagination: false,
+      };
    },
    methods: {
       getImgUrl(img) {
@@ -168,6 +170,22 @@ export default {
       goToLink(link) {
          window.open(link, '_blank');
       },
+      onResize() {
+         if (window.innerWidth >= 768) {
+            this.carouselPagination = true;
+         } else {
+            this.carouselPagination = false;
+         }
+      },
+   },
+
+   created() {
+      this.onResize();
+      window.addEventListener('resize', this.onResize);
+   },
+
+   beforeDestroy() {
+      window.removeEventListener('resize', this.onResize);
    },
 };
 </script>

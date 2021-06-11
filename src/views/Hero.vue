@@ -1,6 +1,6 @@
 <template>
-   <section class="pt-3 xl:pt-10">
-      <div class="flex flex-col xl:flex-row">
+   <section>
+      <div class="flex flex-col xl:flex-row xl:pt-20">
          <div class="relative flex justify-center xl:justify-start">
             <p class="absolute text-sm md:text-2xl -top-4 xl:left-6 xl:top-3">
                Hi, my name is

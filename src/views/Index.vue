@@ -145,14 +145,14 @@
             data-anchor="footer"
             class="pt-6 pb-16 text-left section fp-auto-height"
          >
-            <div class="flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end">
                <div>
                   <span class="text-sm opacity-40">portfolio</span>
                   <a href="#hero" class="block text-xl name">
                      Ra<span class="text-primary">phael Ra</span>mirez
                   </a>
                </div>
-               <div class="pr-3 mt-10 lg:text-right lg:ml-auto">
+               <div class="pr-3 mt-10 md:text-right md:ml-auto">
                   <a href="#hero" class="ml-auto">
                      back to top
                   </a>

@@ -1,40 +1,44 @@
 <template>
-   <section class="pt-3">
-      <div class="flex flex-col">
-         <div class="relative flex justify-center">
-            <p class="absolute text-sm md:text-2xl -top-4">Hi, my name is</p>
+   <section class="pt-3 xl:pt-10">
+      <div class="flex flex-col xl:flex-row">
+         <div class="relative flex justify-center xl:justify-start">
+            <p class="absolute text-sm md:text-2xl -top-4 xl:left-6 xl:top-3">
+               Hi, my name is
+            </p>
             <div>
                <h1 class="font-semibold ra text-primary">RA</h1>
             </div>
             <div
-               class="relative ml-4 space-y-4 md:ml-8 md:space-y-5 lg:space-y-9 top-6 md:top-8 lg:ml-9 lg:top-11 ex-col text-8xl"
+               class="relative flex-col ml-4 space-y-4 md:ml-8 md:space-y-5 lg:space-y-9 top-6 md:top-8 lg:ml-9 lg:top-11 text-8xl"
             >
                <h1 class="phael text-primary">PHAEL</h1>
                <h1 class="mirez text-primary">MIREZ</h1>
             </div>
          </div>
-         <div class="flex flex-col justify-center mt-10">
-            <div>
-               <h2 class="text-xl md:text-3xl lg:text-4xl">
-                  A front-end web developer <br />
-                  based in <span class="text-red-400">Phil</span>ipp<span
-                     class="text-blue-400"
-                     >ines</span
-                  >
-               </h2>
-               <a href="#project">
-                  <button
-                     class="px-10 py-3 mt-10 text-base bg-purple-700 rounded-full  md:mt-16 md:text-xl md:px-12 md:py-4"
-                  >
-                     view projects
-                  </button>
-               </a>
-            </div>
+         <div
+            class="flex flex-col justify-center mt-10 xl:justify-between xl:ml-auto xl:mt-14"
+         >
+            <h2
+               class="text-xl md:text-3xl lg:text-4xl xl:text-right xl:text-3xl"
+            >
+               A front-end web developer <br />
+               based in <span class="text-red-400">Phil</span>ipp<span
+                  class="text-blue-400"
+                  >ines</span
+               >
+            </h2>
+            <a href="#project" class="xl:ml-auto">
+               <button
+                  class="px-10 py-3 mt-10 text-base bg-purple-700 rounded-full md:mt-16 md:text-xl md:px-12 md:py-4"
+               >
+                  view projects
+               </button>
+            </a>
          </div>
       </div>
-      <div class="flex flex-col mt-24">
+      <div class="relative flex flex-col mt-24">
          <div
-            class="absolute top-0 hidden w-7/12 h-64 bg-white -right-10 box opacity-5"
+            class="absolute hidden bg-white w-80 xl:inline box opacity-5"
          ></div>
          <div class="flex flex-col justify-center">
             <div
@@ -184,11 +188,11 @@
                   </svg>
                </button>
             </div>
-            <div class="relative hidden w-full mt-16 space-y-6">
-               <hr class="relative m-auto lg:ml-auto w-72 lg:w-80" />
-               <hr class="relative m-auto lg:ml-auto w-52" />
-               <hr class="relative w-32 m-auto lg:ml-auto" />
-               <hr class="relative w-10 m-auto lg:ml-auto" />
+            <div class="relative hidden w-full space-y-6 mt-28 xl:inline-block">
+               <hr class="ml-auto w-72 lg:w-80" />
+               <hr class="ml-auto w-52" />
+               <hr class="w-32 ml-auto " />
+               <hr class="w-10 ml-auto " />
             </div>
          </div>
       </div>
@@ -252,6 +256,14 @@ export default {};
    .phael,
    .mirez {
       font-size: 6rem;
+   }
+}
+
+@media (min-width: 1280px) {
+   .box {
+      top: 0;
+      left: 26.5%;
+      height: 14rem;
    }
 }
 </style>

@@ -24,7 +24,7 @@
                </h2>
                <a href="#project">
                   <button
-                     class="px-10 py-3 mt-10 text-base bg-purple-700 rounded-full md:mt-16 md:text-xl md:px-12 md:py-4"
+                     class="px-10 py-3 mt-10 text-base bg-purple-700 rounded-full  md:mt-16 md:text-xl md:px-12 md:py-4"
                   >
                      view projects
                   </button>

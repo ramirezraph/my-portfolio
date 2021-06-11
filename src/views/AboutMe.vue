@@ -1,6 +1,6 @@
 <template>
    <section class="text-left">
-      <h1 class="mb-8 text-4xl lg:mb-16 md:text-7xl lg:text-8xl text-primary">
+      <h1 class="mb-8 text-4xl md:mb-16 md:text-7xl lg:text-8xl text-primary">
          about me
       </h1>
       <div class="lg:w-3/4 box">

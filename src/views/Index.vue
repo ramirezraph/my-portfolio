@@ -1,7 +1,7 @@
 <template>
    <div>
       <nav
-         class="absolute left-0 right-0 z-10 w-full space-x-6 lg:p-6 lg:px-32 top-8"
+         class="absolute z-10 w-full px-6 lg:p-6 md:px-16 lg:px-32 top-8 md:top-12"
       >
          <ul class="justify-end hidden lg:flex" id="nav">
             <li data-menuanchor="project">
@@ -31,6 +31,7 @@
                   width="32"
                   height="32"
                   viewBox="0 0 32 32"
+                  class="md:w-10 md:h-10"
                >
                   <g
                      id="Boundary"
@@ -128,7 +129,11 @@
             </div>
          </div>
       </transition-group>
-      <full-page :options="options" id="fullpage" class="px-6 lg:px-32">
+      <full-page
+         :options="options"
+         id="fullpage"
+         class="px-6 md:px-16 lg:px-32"
+      >
          <hero data-menuanchor="hero" v-if="true" class="section active" />
          <project-one data-menuanchor="project" v-if="true" class="section" />
          <project-two data-menuanchor="project" v-if="true" class="section" />
@@ -140,14 +145,14 @@
             data-anchor="footer"
             class="pt-6 pb-16 text-left section fp-auto-height"
          >
-            <div class="flex flex-col">
+            <div class="flex flex-col md:flex-row md:items-end">
                <div>
                   <span class="text-sm opacity-40">portfolio</span>
                   <a href="#hero" class="block text-xl name">
                      Ra<span class="text-primary">phael Ra</span>mirez
                   </a>
                </div>
-               <div class="pr-3 mt-10 lg:text-right lg:ml-auto">
+               <div class="pr-3 mt-10 md:text-right md:ml-auto">
                   <a href="#hero" class="ml-auto">
                      back to top
                   </a>

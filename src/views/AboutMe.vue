@@ -1,13 +1,15 @@
 <template>
    <section class="text-left">
-      <h1 class="mb-8 text-4xl lg:mb-16 lg:text-8xl text-primary">about me</h1>
+      <h1 class="mb-8 text-4xl md:mb-16 md:text-7xl lg:text-8xl text-primary">
+         about me
+      </h1>
       <div class="lg:w-3/4 box">
-         <p class="text-xl lg:text-justify lg:text-2xl">
+         <p class="text-xl lg:text-justify md:text-2xl">
             I am a <strong>front-end web developer</strong>. I live in Bulacan,
             Philippines, currently studying BS, Computer Engineering at Bulacan
             State University.
          </p>
-         <p class="mt-6 text-base lg:text-justify lg:leading-loose opacity-80">
+         <p class="mt-6 text-base md:text-justify md:leading-loose opacity-80">
             I started to learn coding on my own when I was in High school, and
             I've been in love with it since then. I like the idea of writing a
             block of text with logic and turning it into something beautiful and
@@ -21,7 +23,7 @@
             >
          </p>
          <div class="w-full lg:flex">
-            <div class="flex items-center my-6 mb-12 space-x-2">
+            <div class="flex items-center my-6 mb-12 space-x-2 md:space-x-4">
                <!-- HTML -->
                <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +273,7 @@
 
             <a
                href="#contact"
-               class="px-6 py-3 text-base bg-purple-700 rounded-full lg:text-base lg:px-12 lg:py-4"
+               class="px-6 py-3 text-base bg-purple-700 rounded-full md:px-12 md:py-4"
             >
                contact me
             </a>

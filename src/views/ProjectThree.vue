@@ -1,13 +1,15 @@
 <template>
    <section>
       <project-view class="mt-12 lg:mt-24" :project="projects[2]" />
-      <div class="w-full mt-6 visit lg:block">
+      <div class="w-full visit lg:block">
          <div
-            class="flex items-center justify-center lg:justify-end gap-x-3 lg:gap-x-6"
+            class="flex items-center justify-center md:mt-16 lg:justify-end gap-x-3 lg:gap-x-6"
          >
-            <h2 class="text-xs opacity-80">Still interested to see more?</h2>
+            <h2 class="text-xs md:text-base opacity-80">
+               Still interested to see more?
+            </h2>
             <button
-               class="flex items-center px-5 py-2 text-sm bg-purple-700 rounded-full lg:text-base lg:px-10 lg:py-4 gap-x-2"
+               class="flex items-center px-5 py-2 text-sm bg-purple-700 rounded-full md:px-8 md:py-4 md:text-base lg:text-base lg:px-10 lg:py-4 gap-x-2"
                @click="goToLink('https://github.com/ramirezraph')"
             >
                <svg

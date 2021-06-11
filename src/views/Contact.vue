@@ -1,13 +1,17 @@
 <template>
    <section>
-      <h1 class="text-4xl lg:text-8xl text-primary">get in touch</h1>
-      <p class="mt-3 text-base lg:mt-10 lg:mb-24 lg:text-2xl opacity-80">
+      <h1 class="text-4xl md:text-7xl lg:text-8xl text-primary">
+         get in touch
+      </h1>
+      <p
+         class="mt-3 text-base md:mt-6 lg:mt-10 lg:mb-24 md:text-2xl opacity-80"
+      >
          I'll be happy to connect with you.
       </p>
 
       <div class="flex flex-col mt-10 lg:px-32 lg:mt-12">
          <div class="w-full">
-            <p class="flex mt-3 gap-x-6 lg:gap-x-12">
+            <p class="flex mt-3 md:mt-6 gap-x-6 lg:gap-x-12">
                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25.562"
@@ -42,7 +46,7 @@
                </svg>
                raphaelisiah.ramirez@gmail.com
             </p>
-            <p class="flex mt-3 lg:mt-6 gap-x-6 lg:gap-x-12">
+            <p class="flex mt-3 md:mt-6 lg:mt-6 gap-x-6 lg:gap-x-12">
                <svg
                   id="MDI_phone"
                   data-name="MDI / phone"
@@ -71,7 +75,7 @@
                +639 995 001 2084
             </p>
             <button
-               class="flex px-6 py-2 mt-6 text-sm text-white lg:text-base lg:px-8 lg:py-3 lg:mt-12 gap-x-3 rounded-xl"
+               class="flex px-6 py-2 mt-6 text-sm text-white md:mt-12 lg:text-base md:px-8 md:py-3 gap-x-3 rounded-xl"
                style="background-color: #202020"
             >
                <svg
@@ -108,7 +112,9 @@
                </svg>
                <span>Download Resume</span>
             </button>
-            <div class="flex py-6 socials gap-x-4 lg:mt-12 lg:gap-x-8">
+            <div
+               class="flex py-6 socials gap-x-4 lg:mt-12 md:gap-x-6 lg:gap-x-8"
+            >
                <button>
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
@@ -222,32 +228,32 @@
          </div>
          <div class="w-full">
             <form
-               class="flex flex-col items-start lg:items-end gap-y-3 lg:gap-y-6"
+               class="flex flex-col items-start md:mt-12 lg:items-end gap-y-3 md:gap-y-4 lg:gap-y-6"
                @submit.prevent=""
             >
                <input
-                  class="w-full px-6 py-2 text-base rounded-md lg:w-11/12 lg:py-3"
+                  class="w-full px-6 py-2 text-base rounded-md md:py-3 lg:w-11/12 lg:py-3"
                   type="text"
                   style="background-color: #272727"
                   placeholder="Name"
                />
 
                <input
-                  class="w-full px-6 py-2 text-base rounded-md lg:w-11/12 lg:py-3"
+                  class="w-full px-6 py-2 text-base rounded-md md:py-3 lg:w-11/12 lg:py-3"
                   type="text"
                   style="background-color: #272727"
                   placeholder="Your Email"
                />
 
                <textarea
-                  class="w-full px-6 py-2 text-base rounded-md lg:w-11/12 lg:py-3"
+                  class="w-full px-6 py-2 text-base rounded-md md:py-3 lg:w-11/12 lg:py-3"
                   rows="3"
                   style="background-color: #272727"
                   placeholder="Type your message here."
                />
                <button
                   type="submit"
-                  class="relative px-16 py-2 text-sm bg-purple-700 rounded-full lg:mr-auto lg:py-3 lg:left-10"
+                  class="relative px-16 py-2 text-sm bg-purple-700 rounded-full md:mt-3 md:text-base md:py-4 lg:mr-auto lg:py-3 lg:left-10"
                >
                   Submit
                </button>

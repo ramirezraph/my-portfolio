@@ -4,9 +4,9 @@
       :class="reverse ? 'flex-row-reverse' : ''"
    >
       <div class="w-full">
-         <div>
+         <div class="md:mt-6">
             <h2
-               class="text-2xl font-semibold lg:text-4xl"
+               class="text-2xl font-semibold md:text-3xl lg:text-4xl"
                :class="reverse ? 'text-left' : 'text-left'"
             >
                {{ project.title }}
@@ -14,14 +14,14 @@
             <p
                v-for="(p, index) in project.description"
                :key="index"
-               class="mt-3 text-sm leading-normal lg:text-base opacity-80"
+               class="mt-3 text-sm leading-normal md:leading-relaxed md:text-base lg:text-base opacity-80"
                :class="reverse ? 'text-left' : 'text-left'"
             >
                {{ p }}
             </p>
 
             <div
-               class="flex flex-wrap mt-6 gap-y-3 lg:mt-24 lg:gap-y-5 chips lg:gap-x-3 gap-x-1.5"
+               class="flex flex-wrap mt-6 gap-y-3 lg:mt-24 md:gap-y-5 chips md:gap-x-3 gap-x-1.5"
             >
                <chips-technology
                   v-for="(technology, index) in project.technologies"
@@ -31,7 +31,7 @@
                </chips-technology>
             </div>
          </div>
-         <div class="flex mt-6 space-x-3">
+         <div class="flex mt-6 space-x-3 md:mt-12">
             <button-icon
                tailwindColor="bg-green-700"
                @button-icon-clicked="goToLink(project.demoLink)"
@@ -115,7 +115,7 @@
             </button-icon>
          </div>
       </div>
-      <div class="w-full mb-6" :class="reverse ? 'lg:pr-14' : 'lg:pl-14'">
+      <div class="w-full" :class="reverse ? 'lg:pr-14' : 'lg:pl-14'">
          <carousel
             :per-page="1"
             :autoplay="true"
@@ -123,10 +123,10 @@
             :loop="true"
             :autoplay-timeout="5000"
             class="w-full"
-            :paginationEnabled="false"
+            :paginationEnabled="carouselPagination"
             pagination-color="#9a9a9a"
             pagination-active-color="#fff"
-            :paginationSize="5"
+            :paginationSize="8"
          >
             <slide v-for="(image, index) in project.imageLinks" :key="index">
                <img :src="getImgUrl(image)" alt="" class="bg-cover" />
@@ -159,7 +159,9 @@ export default {
       },
    },
    data() {
-      return {};
+      return {
+         carouselPagination: false,
+      };
    },
    methods: {
       getImgUrl(img) {
@@ -168,6 +170,22 @@ export default {
       goToLink(link) {
          window.open(link, '_blank');
       },
+      onResize() {
+         if (window.innerWidth >= 768) {
+            this.carouselPagination = true;
+         } else {
+            this.carouselPagination = false;
+         }
+      },
+   },
+
+   created() {
+      this.onResize();
+      window.addEventListener('resize', this.onResize);
+   },
+
+   beforeDestroy() {
+      window.removeEventListener('resize', this.onResize);
    },
 };
 </script>

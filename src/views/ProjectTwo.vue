@@ -28,4 +28,18 @@ section::before {
    top: -3rem;
    left: -5rem;
 }
+
+@media (min-width: 1440px) {
+   section::before {
+      top: 0rem;
+   }
+}
+
+@media (min-width: 1680px) {
+   section::before {
+      font-size: 14rem;
+      top: 0rem;
+      left: -12rem;
+   }
+}
 </style>

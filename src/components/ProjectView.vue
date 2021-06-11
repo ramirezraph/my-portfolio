@@ -1,6 +1,6 @@
 <template>
    <div
-      class="flex flex-col-reverse xl:flex-row xl:gap-x-8"
+      class="flex flex-col-reverse xl:flex-row xl:gap-x-8 2xl:gap-x-10"
       :class="reverse ? 'xl:flex-row-reverse' : ''"
    >
       <div class="w-full">

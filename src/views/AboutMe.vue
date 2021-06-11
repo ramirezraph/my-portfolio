@@ -1,6 +1,6 @@
 <template>
    <section class="text-left">
-      <h1 class="mb-8 text-4xl md:mb-16 md:text-7xl lg:text-8xl text-primary">
+      <h1 class="mb-8 text-4xl md:mb-16 md:text-7xl xl:text-8xl text-primary">
          about me
       </h1>
       <div class="lg:w-3/4 box">
@@ -9,7 +9,9 @@
             Philippines, currently studying BS, Computer Engineering at Bulacan
             State University.
          </p>
-         <p class="mt-6 text-base md:text-justify md:leading-loose opacity-80">
+         <p
+            class="mt-6 text-base md:text-justify md:leading-loose xl:leading-10 opacity-80"
+         >
             I started to learn coding on my own when I was in High school, and
             I've been in love with it since then. I like the idea of writing a
             block of text with logic and turning it into something beautiful and
@@ -22,7 +24,7 @@
                websites.</span
             >
          </p>
-         <div class="w-full lg:flex">
+         <div class="items-center w-full lg:flex lg:flex-row xl:mt-8">
             <div class="flex items-center my-6 mb-12 space-x-2 md:space-x-4">
                <!-- HTML -->
                <svg
@@ -271,12 +273,14 @@
                </svg>
             </div>
 
-            <a
-               href="#contact"
-               class="px-6 py-3 text-base bg-purple-700 rounded-full md:px-12 md:py-4"
-            >
-               contact me
-            </a>
+            <div class="xl:ml-auto">
+               <a
+                  href="#contact"
+                  class="px-6 py-4 ml-auto text-base bg-purple-700 rounded-full md:px-12 md:py-4"
+               >
+                  contact me
+               </a>
+            </div>
          </div>
       </div>
    </section>

@@ -1,7 +1,7 @@
 <template>
    <div>
       <nav
-         class="absolute left-0 right-0 z-10 w-full space-x-6 lg:p-6 md:px-16 lg:px-32 top-8"
+         class="absolute z-10 w-full px-6 lg:p-6 md:px-16 lg:px-32 top-8 md:top-12"
       >
          <ul class="justify-end hidden lg:flex" id="nav">
             <li data-menuanchor="project">
@@ -31,6 +31,7 @@
                   width="32"
                   height="32"
                   viewBox="0 0 32 32"
+                  class="md:w-10 md:h-10"
                >
                   <g
                      id="Boundary"

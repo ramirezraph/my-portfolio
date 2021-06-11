@@ -21,7 +21,7 @@
             >
          </p>
          <div class="w-full lg:flex">
-            <div class="flex items-center my-6 space-x-2">
+            <div class="flex items-center my-6 mb-12 space-x-2">
                <!-- HTML -->
                <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +271,7 @@
 
             <a
                href="#contact"
-               class="px-6 py-3 ml-auto text-base bg-purple-700 rounded-full lg:text-base lg:px-12 lg:py-4"
+               class="px-6 py-3 text-base bg-purple-700 rounded-full lg:text-base lg:px-12 lg:py-4"
             >
                contact me
             </a>

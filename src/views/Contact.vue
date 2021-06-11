@@ -4,14 +4,14 @@
          get in touch
       </h1>
       <p
-         class="mt-3 text-base md:mt-6 lg:mt-10 lg:mb-24 md:text-2xl opacity-80"
+         class="mt-3 text-base md:mt-6 lg:mt-10 lg:mb-24 md:text-2xl opacity-80 xl:mt-3"
       >
          I'll be happy to connect with you.
       </p>
 
-      <div class="flex flex-col mt-10 lg:px-32 lg:mt-12">
+      <div class="flex flex-col mt-10 xl:flex-row lg:px-32 lg:mt-12">
          <div class="w-full">
-            <p class="flex mt-3 md:mt-6 gap-x-6 lg:gap-x-12">
+            <p class="flex mt-3 md:mt-6 gap-x-6 lg:gap-x-12 xl:mt-0">
                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25.562"
@@ -228,7 +228,7 @@
          </div>
          <div class="w-full">
             <form
-               class="flex flex-col items-start md:mt-12 lg:items-end gap-y-3 md:gap-y-4 lg:gap-y-6"
+               class="flex flex-col items-start md:mt-12 lg:items-end gap-y-3 md:gap-y-4 lg:gap-y-6 xl:mt-0"
                @submit.prevent=""
             >
                <input

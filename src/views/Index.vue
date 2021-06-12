@@ -227,8 +227,7 @@ export default {
 }
 
 li a {
-   transition: all 500ms ease-in-out;
-   transform: scale(1);
+   transition: all 300ms ease-in-out;
 
    &:before {
       content: '';
@@ -249,6 +248,7 @@ li a {
 
 li.active a {
    @apply text-primary relative;
+   transition: all 300ms ease-in-out;
 
    &:before {
       content: '';
@@ -261,7 +261,7 @@ li.active a {
    }
 
    &:hover {
-      @apply text-primary;
+      @apply text-primary opacity-90;
    }
 }
 </style>

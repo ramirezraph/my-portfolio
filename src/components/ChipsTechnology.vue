@@ -1,6 +1,6 @@
 <template>
    <button
-      class="px-5 py-1 text-xs bg-purple-600 rounded-full outline-none md:px-6 md:text-base lg:px-7 focus:outline-none"
+      class="px-5 py-1 text-xs transition duration-700 ease-in-out bg-purple-600 rounded-full outline-none md:px-6 md:text-base lg:px-7 focus:outline-none hover:bg-purple-500"
    >
       <slot></slot>
    </button>

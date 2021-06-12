@@ -31,7 +31,7 @@
             </h2>
             <a href="#project" class="mt-10 xl:ml-auto md:mt-16">
                <button
-                  class="px-10 py-3 text-base transition duration-700 ease-in-out bg-purple-700 rounded-full hover:bg-green-600 focus:outline-none md:text-xl md:px-12 md:py-4 "
+                  class="px-10 py-3 text-base transition duration-1000 ease-in-out bg-purple-700 rounded-full hover:bg-green-600 focus:outline-none md:text-xl md:px-12 md:py-4 "
                >
                   view projects
                </button>

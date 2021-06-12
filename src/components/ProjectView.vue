@@ -6,7 +6,7 @@
       <div class="w-full">
          <div class="mt-6 xl:mt-0">
             <h2
-               class="text-2xl font-semibold md:text-3xl lg:text-4xl"
+               class="text-2xl font-semibold md:text-3xl lg:text-4xl 2xl:mb-6"
                :class="reverse ? 'text-left' : 'text-left'"
             >
                {{ project.title }}

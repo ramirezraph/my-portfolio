@@ -29,9 +29,9 @@
                   >ines</span
                >
             </h2>
-            <a href="#project" class="xl:ml-auto">
+            <a href="#project" class="mt-10 xl:ml-auto md:mt-16">
                <button
-                  class="px-10 py-3 mt-10 text-base bg-purple-700 rounded-full md:mt-16 md:text-xl md:px-12 md:py-4"
+                  class="px-10 py-3 text-base bg-purple-700 rounded-full focus:outline-none md:text-xl md:px-12 md:py-4"
                >
                   view projects
                </button>
@@ -44,9 +44,9 @@
          ></div>
          <div class="flex flex-col justify-center">
             <div
-               class="flex justify-center socials lg:justify-end gap-x-5 xl:gap-x-8"
+               class="flex justify-center socials lg:justify-end gap-x-1 xl:gap-x-3"
             >
-               <button>
+               <button class="p-2">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.15"
@@ -80,7 +80,7 @@
                      </g>
                   </svg>
                </button>
-               <button>
+               <button class="p-2">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.15"
@@ -113,7 +113,7 @@
                      </g>
                   </svg>
                </button>
-               <button>
+               <button class="p-2">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.15"
@@ -151,7 +151,7 @@
                      </g>
                   </svg>
                </button>
-               <button>
+               <button class="p-2">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.145"
@@ -190,7 +190,7 @@
                   </svg>
                </button>
             </div>
-            <div class="relative hidden w-full space-y-6 mt-28 xl:inline-block">
+            <div class="relative hidden w-full space-y-6 lines mt-28 xl:inline-block">
                <hr class="ml-auto w-72 lg:w-80" />
                <hr class="ml-auto w-52" />
                <hr class="w-32 ml-auto " />
@@ -206,6 +206,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+
 .ra {
    position: relative;
    font-size: 8rem;

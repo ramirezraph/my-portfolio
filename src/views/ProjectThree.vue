@@ -9,7 +9,7 @@
                Still interested to see more?
             </h2>
             <button
-               class="flex items-center px-5 py-2 text-sm bg-purple-700 rounded-full md:px-8 md:py-4 md:text-base lg:text-base lg:px-10 lg:py-4 gap-x-2"
+               class="flex items-center px-5 py-2 text-sm transition duration-1000 ease-in-out bg-purple-700 rounded-full md:px-8 md:py-4 md:text-base lg:text-base lg:px-10 lg:py-4 gap-x-2 hover:bg-green-700"
                @click="goToLink('https://github.com/ramirezraph')"
             >
                <svg

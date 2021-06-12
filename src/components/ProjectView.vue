@@ -35,6 +35,7 @@
             <button-icon
                tailwindColor="bg-green-700"
                @button-icon-clicked="goToLink(project.demoLink)"
+               class="transition duration-1000 ease-in-out hover:bg-purple-700"
             >
                <svg
                   id="MDI_monitor-screenshot"
@@ -73,6 +74,7 @@
             <button-icon
                tailwindColor="bg-gray-800"
                @button-icon-clicked="goToLink(project.githubLink)"
+               class="transition duration-700 ease-in-out hover:bg-gray-700"
             >
                <svg
                   xmlns="http://www.w3.org/2000/svg"

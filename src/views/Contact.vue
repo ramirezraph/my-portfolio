@@ -75,7 +75,7 @@
                +639 995 001 2084
             </p>
             <button
-               class="flex px-6 py-2 mt-6 text-sm text-white md:mt-12 lg:text-base md:px-8 md:py-3 gap-x-3 rounded-xl"
+               class="flex px-6 py-2 mt-6 text-sm text-white transition duration-300 ease-in-out transform hover:scale-105 md:mt-12 lg:text-base md:px-8 md:py-3 gap-x-3 rounded-xl "
                style="background-color: #202020"
             >
                <svg
@@ -115,7 +115,7 @@
             <div
                class="flex py-6 socials gap-x-4 lg:mt-12 md:gap-x-6 lg:gap-x-8"
             >
-               <button>
+               <button class="transition duration-300 ease-in-out transform hover:scale-110">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.15"
@@ -148,7 +148,7 @@
                      </g>
                   </svg>
                </button>
-               <button>
+               <button class="transition duration-300 ease-in-out transform hover:scale-110">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.15"
@@ -186,7 +186,7 @@
                      </g>
                   </svg>
                </button>
-               <button>
+               <button class="transition duration-300 ease-in-out transform hover:scale-110">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.145"
@@ -253,7 +253,7 @@
                />
                <button
                   type="submit"
-                  class="relative px-16 py-2 text-sm bg-purple-700 rounded-full md:mt-3 md:text-base md:py-4 lg:mr-auto lg:py-3 lg:left-10"
+                  class="relative px-16 py-2 text-sm transition duration-1000 ease-in-out bg-purple-700 rounded-full md:mt-3 md:text-base md:py-4 lg:mr-auto lg:py-3 lg:left-10 hover:bg-green-700"
                >
                   Submit
                </button>

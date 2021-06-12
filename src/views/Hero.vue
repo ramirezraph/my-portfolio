@@ -31,7 +31,7 @@
             </h2>
             <a href="#project" class="mt-10 xl:ml-auto md:mt-16">
                <button
-                  class="px-10 py-3 text-base bg-purple-700 rounded-full focus:outline-none md:text-xl md:px-12 md:py-4"
+                  class="px-10 py-3 text-base transition duration-1000 ease-in-out bg-purple-700 rounded-full hover:bg-green-700 focus:outline-none md:text-xl md:px-12 md:py-4 "
                >
                   view projects
                </button>
@@ -46,7 +46,7 @@
             <div
                class="flex justify-center socials lg:justify-end gap-x-1 xl:gap-x-3"
             >
-               <button class="p-2">
+               <button class="p-2 transition duration-300 ease-in-out transform hover:scale-110">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.15"
@@ -80,7 +80,7 @@
                      </g>
                   </svg>
                </button>
-               <button class="p-2">
+               <button class="p-2 transition duration-300 ease-in-out transform hover:scale-110">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.15"
@@ -113,7 +113,7 @@
                      </g>
                   </svg>
                </button>
-               <button class="p-2">
+               <button class="p-2 transition duration-300 ease-in-out transform hover:scale-110">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.15"
@@ -151,7 +151,7 @@
                      </g>
                   </svg>
                </button>
-               <button class="p-2">
+               <button class="p-2 transition duration-300 ease-in-out transform hover:scale-110">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="42.145"

@@ -67,7 +67,7 @@
                   <li data-menuanchor="project">
                      <a
                         href="#project"
-                        class="px-3 text-3xl text-white active:text-primary"
+                        class="px-3 text-3xl text-white active:text-primary hover:text-purple-300"
                         @click="toggleNav"
                      >
                         my projects
@@ -76,7 +76,7 @@
                   <li data-menuanchor="about">
                      <a
                         href="#about"
-                        class="px-3 text-3xl text-white active:text-primary"
+                        class="px-3 text-3xl text-white active:text-primary hover:text-purple-300"
                         @click="toggleNav"
                      >
                         about me
@@ -85,7 +85,7 @@
                   <li data-menuanchor="contact">
                      <a
                         href="#contact"
-                        class="px-3 text-3xl text-white active:text-primary"
+                        class="px-3 text-3xl text-white active:text-primary hover:text-purple-300"
                         @click="toggleNav"
                      >
                         get in touch
@@ -213,7 +213,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .slide-enter-active,
 .slide-leave-active {
    transition: opacity 300ms ease-out, transform 300ms ease-out;
@@ -227,7 +227,7 @@ export default {
 }
 
 li a {
-   transition: all 500ms ease-in-out;
+   transition: all 300ms ease-in-out;
 
    &:before {
       content: '';
@@ -240,10 +240,15 @@ li a {
 
       transition: width 500ms ease-out;
    }
+
+   &:hover {
+      @apply text-purple-300;
+   }
 }
 
 li.active a {
    @apply text-primary relative;
+   transition: all 300ms ease-in-out;
 
    &:before {
       content: '';
@@ -253,6 +258,10 @@ li.active a {
       bottom: -0.2em;
       background-color: #18f890;
       opacity: 1;
+   }
+
+   &:hover {
+      @apply text-primary opacity-90;
    }
 }
 </style>

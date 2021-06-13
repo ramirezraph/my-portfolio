@@ -1,5 +1,6 @@
 # Portfolio Website
 I created my own portfolio website using Vue along with TailwindCSS.
+It is still under development.
 
 ## Project setup
 ```
